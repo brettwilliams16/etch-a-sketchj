@@ -1,7 +1,16 @@
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative; 
+}
+
+.new-grid{
+    width: 5vw;
+    position: absolute;
+    top: 5%;
 }
 
 .container{
@@ -10,8 +19,6 @@ body{
     width: 60vw;
     margin-top: 10%;
     display: grid;
-    grid-template-rows: repeat(16, 1fr);
-    grid-template-columns: repeat(16, 1fr);
 }
 
 .gridSquare {
