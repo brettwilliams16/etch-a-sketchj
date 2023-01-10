@@ -1,22 +1,24 @@
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative; 
+    display: grid;
+    grid-template-rows: 1fr 1fr 10fr;
+    grid-template-columns: repeat(10, 1fr);
 }
 
 .new-grid{
     width: 5vw;
-    position: absolute;
-    top: 5%;
+    grid-row: 2;
+    grid-column: 5;
+    width: 10vw;
+    border-radius: 10px;
 }
 
 .container{
+    grid-row: 3;
+    grid-column: 2 / 9;
     border: 5px solid black;
     height: 65vh;
-    width: 60vw;
+    width: 65vw;
     margin-top: 10%;
     display: grid;
 }
