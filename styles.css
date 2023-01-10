@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 5px solid black;
+    height: 65vh;
+    width: 60vw;
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.gridSquare {
+    border: 1px solid black;
+}
+
+.hovered {
+    background-color: rgb(150, 147, 147);
+}
